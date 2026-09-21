@@ -1,4 +1,4 @@
-type Tarea = {       // molde para que otros archivos puedan usarlo
+export type Tarea = {       // molde para que otros archivos puedan usarlo
     id: number;
     titulo: string;
     descripcion: string;
@@ -10,7 +10,7 @@ type Tarea = {       // molde para que otros archivos puedan usarlo
 };
 
 //uso otro type para los valores de entrada, porque no quiero que el usuario tenga que darme un id ni fechas, que son generadas automáticamente.
-type DatosNuevaTarea = {
+export type DatosNuevaTarea = {
     titulo: string;
     descripcion: string|undefined;
     estado: string|undefined;
