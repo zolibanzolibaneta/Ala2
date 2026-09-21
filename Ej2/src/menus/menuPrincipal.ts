@@ -3,7 +3,7 @@ import { menuVerTareas } from './menuVerTareas.js';
 import { menuBuscarTarea } from './menuBuscarTarea.js';
 import { menuAgregarTarea } from './menuAgregarTarea.js';
 
-export function menuPrincipal(): number {
+export function menuPrincipal(): number {// agregue tipo
     console.log('BIENVENIDO AL MENÚ PRINCIPAL');
     console.log('Seleccione una opción:');
     console.log('1. Ver mis tareas');
@@ -11,7 +11,7 @@ export function menuPrincipal(): number {
     console.log('3. Agregar una tarea');
     console.log("0. Salir");
 
-    const op: number = readlineSync.questionInt('Ingrese el número de la opción deseada: ');
+    const op: number = readlineSync.questionInt('Ingrese el número de la opción deseada: ');//tipo
     switch (op) {
         case 1:
             menuVerTareas();
